@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="417.0" prefWidth="468.0" spacing="20.0" style="-fx-background-color: F6D8DC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.HelloController">
+    <stylesheets>
+        <URL value="@style/style.css" />
+    </stylesheets>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+        <Label prefHeight="17.0" prefWidth="38.0" text="Nom :" />
+        <TextField fx:id="nom" />
+        <Label text="Téléphone" />
+        <TextField fx:id="tele" />
+        <Button fx:id="save" mnemonicParsing="false" onAction="#onSaveButtonClick" style="-fx-background-radius: 10; -fx-background-color: #f34d59;" stylesheets="@style/style.css" text="Save" />
+      <Button fx:id="modify" disable="true" layoutX="30.0" layoutY="195.0" mnemonicParsing="false" onAction="#onModifyButtonClick" prefHeight="25.0" prefWidth="71.0" style="-fx-background-radius: 10; -fx-background-color: #f34d59;" text="Modify">
+         <VBox.margin>
+            <Insets left="50.0" top="-45.0" />
+         </VBox.margin>
+      </Button>
+        <TableView fx:id="mytable" prefHeight="188.0" prefWidth="428.0" style="-fx-background-radius: 3; -fx-background-color: F68394;">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="45.39999008178711" style="-fx-background-color: FAA0A7;" text="id" />
+                <TableColumn fx:id="col_nom" prefWidth="72.39999389648438" style="-fx-background-color: FAA0A7;" text="Nom" />
+                <TableColumn fx:id="col_tele" prefWidth="94.60000610351562" style="-fx-background-color: FAA0A7;" text="N° de téléphone" />
+            </columns>
+        </TableView>
+        <AmbientLight color="#f34d59" lightOn="Red" />
+      <Button mnemonicParsing="false" onAction="#toDashboard" style="-fx-background-color: #f34d59;" text="Back" />
+    </children>
+</VBox>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: F6D8DC;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.fstt.trackingl.DashboardController">
+   <children>
+      <HBox layoutX="7.0" layoutY="65.0" prefHeight="173.0" prefWidth="590.0">
+         <children>
+            <Button fx:id="btnLivreur" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClickLivreur" prefHeight="51.0" prefWidth="82.0" style="-fx-background-color: FAA0A7;" text="Livreur" textAlignment="JUSTIFY">
+               <HBox.margin>
+                  <Insets left="250.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnProduit" contentDisplay="CENTER" layoutX="259.0" layoutY="70.0" mnemonicParsing="false" onAction="#onClickProduits" prefHeight="51.0" prefWidth="82.0" style="-fx-background-color: FAA0A7;" text="Produits" textAlignment="JUSTIFY">
+               <HBox.margin>
+                  <Insets left="-84.0" top="120.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnCommande" contentDisplay="CENTER" layoutX="260.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickCommande" prefHeight="51.0" prefWidth="82.0" style="-fx-background-color: FAA0A7;" text="Commande" textAlignment="JUSTIFY">
+               <HBox.margin>
+                  <Insets left="-81.0" top="60.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+      <ButtonBar layoutX="-66.0" prefHeight="40.0" prefWidth="200.0" />
+    <Button fx:id="btnDisconnect" layoutX="108.0" layoutY="328.0" mnemonicParsing="false" onAction="#toAdmin" style="-fx-background-color: #f34d59;" text="Disconnect" />
+   </children>
+</AnchorPane>
